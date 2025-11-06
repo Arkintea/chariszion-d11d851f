@@ -35,7 +35,7 @@ const Footer = () => {
                 <h2 className="text-2xl font-bold text-white leading-tight">Foundation</h2>
               </div>
             </div>
-            <p className="text-base-white/80 leading-relaxed">Spreading Hope, Sharing Joy, Changing Lives</p>
+            <p className="text-sm-white/80 leading-relaxed">Spreading Hope, Sharing Joy, Changing Lives</p>
           </div>
 
           <div>
