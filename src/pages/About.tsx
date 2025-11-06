@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import founderImage from "@/assets/founder-photo.jpg";
 
 const About = () => {
   return (
@@ -11,6 +12,33 @@ const About = () => {
                 Our <span className="gradient-text">Story</span>
               </h1>
               <p className="text-xl text-muted-foreground">Where compassion meets action</p>
+            </div>
+
+            {/* Founder Section */}
+            <div className="mb-16 animate-fade-in">
+              <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 rounded-3xl p-8 md:p-12 shadow-xl border border-border">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent rounded-full blur-lg opacity-50"></div>
+                      <img
+                        src={founderImage}
+                        alt="Olamide Opatunde - Founder"
+                        className="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-2xl"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-center md:text-left">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-2 gradient-text">
+                      Olamide Opatunde
+                    </h2>
+                    <p className="text-xl text-muted-foreground mb-4">Founder & Visionary</p>
+                    <p className="text-lg text-foreground/80 leading-relaxed">
+                      Driven by personal experiences and a heart full of compassion, Olamide founded Chariszion Smile Foundation to create lasting change in the lives of those who need it most.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Founder's Story */}

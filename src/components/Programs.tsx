@@ -1,4 +1,4 @@
-import { UtensilsCrossed, GraduationCap, Heart } from "lucide-react";
+import { UtensilsCrossed, GraduationCap, Heart, Sparkles, Home, HandHeart } from "lucide-react";
 
 const Programs = () => {
   const programs = [
@@ -26,6 +26,30 @@ const Programs = () => {
       gradient: "from-secondary to-purple-700",
       bgBlob: "bg-secondary/10",
     },
+    {
+      icon: Sparkles,
+      title: "Youth Development Programs",
+      description:
+        "Empowering young people with skills training, mentorship, and opportunities to become future leaders in their communities.",
+      gradient: "from-accent to-teal-600",
+      bgBlob: "bg-accent/10",
+    },
+    {
+      icon: Home,
+      title: "Family Support Program",
+      description:
+        "Providing comprehensive support to families in crisis, including food assistance, shelter support, and essential household resources.",
+      gradient: "from-secondary to-amber-600",
+      bgBlob: "bg-secondary/10",
+    },
+    {
+      icon: HandHeart,
+      title: "Widow Empowerment Initiative",
+      description:
+        "Supporting widows through financial assistance, vocational training, and business startup grants to help them become self-sufficient.",
+      gradient: "from-purple-500 to-pink-600",
+      bgBlob: "bg-purple-50",
+    },
   ];
 
   return (
@@ -40,11 +64,11 @@ const Programs = () => {
             How We <span className="gradient-text">Help</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Three pillars of support creating lasting change
+            Six pillars of support creating lasting change
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {programs.map((program, index) => (
             <div
               key={index}

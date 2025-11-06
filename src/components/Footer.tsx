@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Heart } from "lucide-react";
+import logoImage from "@/assets/logo-official.png";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -28,14 +29,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-gradient-to-br from-primary to-secondary p-2 rounded-2xl">
-                <img
-                  src="https://github.com/Arkintea/chariszionsmile/blob/main/white.png?raw=true"
-                  alt="Chariszion Smile Foundation"
-                  className="h-10 w-10 object-contain"
-                />
-              </div>
-              <span className="text-xl font-bold">Chariszion Smile</span>
+              <img
+                src={logoImage}
+                alt="Chariszion Smile Foundation"
+                className="h-16 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-white/80 leading-relaxed">
               Spreading hope, sharing joy, and changing lives across Nigeria.
@@ -49,7 +47,6 @@ const Footer = () => {
                 { label: "Home", action: () => navigate("/") },
                 { label: "About", action: () => navigate("/about") },
                 { label: "Programs", action: () => scrollToSection("programs") },
-                { label: "Gallery", action: () => scrollToSection("gallery") },
                 { label: "Donate", action: () => navigate("/donate") },
               ].map((link, index) => (
                 <li key={index}>

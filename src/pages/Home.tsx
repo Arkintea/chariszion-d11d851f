@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Programs from "@/components/Programs";
-import GalleryCarousel from "@/components/GalleryCarousel";
+import MediaSlideshow from "@/components/MediaSlideshow";
 import Contact from "@/components/Contact";
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
       <Hero />
       <Stats />
       <Programs />
-      <GalleryCarousel />
+      <MediaSlideshow />
       <Contact />
     </div>
   );

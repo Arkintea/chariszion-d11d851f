@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@/assets/logo-official.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,16 +27,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <div className="bg-gradient-to-br from-primary to-secondary p-2 rounded-2xl shadow-lg">
-              <img
-                src="https://github.com/Arkintea/chariszionsmile/blob/main/white.png?raw=true"
-                alt="Chariszion Smile Foundation"
-                className="h-10 w-10 object-contain"
-              />
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Chariszion Smile
-            </span>
+            <img
+              src={logoImage}
+              alt="Chariszion Smile Foundation"
+              className="h-16 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,12 +47,6 @@ const Navbar = () => {
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Programs
-            </button>
-            <button
-              onClick={() => scrollToSection("gallery")}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Gallery
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -104,12 +94,6 @@ const Navbar = () => {
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
             >
               Programs
-            </button>
-            <button
-              onClick={() => scrollToSection("gallery")}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
-            >
-              Gallery
             </button>
             <button
               onClick={() => scrollToSection("contact")}
