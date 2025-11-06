@@ -35,7 +35,7 @@ const Footer = () => {
                 className="h-16 w-auto object-contain"
               />
               <div>
-                <h2 className="text-xl font-bold text-white">Chariszion Smile Foundation</h2>
+                <h2 className="text-2xl font-bold text-white">Chariszion Smile Foundation</h2>
               </div>
             </div>
             <p className="text-white/80 leading-relaxed">
