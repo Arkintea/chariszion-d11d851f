@@ -33,10 +33,10 @@ const Navbar = () => {
               className="h-16 md:h-20 w-auto object-contain"
             />
             <div className="hidden md:flex flex-col gap-1">
-              <h1 className="text-2xl md:text-3xl font-black text-primary leading-tight tracking-wide uppercase drop-shadow-md">
+              <h1 className="text-3xl md:text-5xl font-black text-navbar-brand leading-tight tracking-wide uppercase drop-shadow-md">
                 Chariszion Smile Foundation
               </h1>
-              <p className="text-sm md:text-base text-muted-foreground font-medium tracking-wider uppercase">
+              <p className="text-xs md:text-sm text-muted-foreground font-medium tracking-wider uppercase">
                 Spreading Hope, Sharing Joy, Changing Lives
               </p>
             </div>
