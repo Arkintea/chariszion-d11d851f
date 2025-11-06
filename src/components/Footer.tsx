@@ -30,12 +30,12 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src={logoImage} alt="Chariszion Smile Foundation" className="h-16 w-auto object-contain" />
-          <div className="flex flex-col">
-            <h2 className="text-2xl font-bold text-white leading-tight">Chariszion Smile</h2>
-            <h2 className="text-2xl font-bold text-white leading-tight">Foundation</h2>
-          </div>
-        </div>
-        <p className="text-white/60 leading-relaxed">Spreading Hope, Sharing Joy, Changing Lives</p>
+              <div className="flex flex-col">
+                <h2 className="text-2xl font-bold text-white leading-tight">Chariszion Smile</h2>
+                <h2 className="text-2xl font-bold text-white leading-tight">Foundation</h2>
+              </div>
+            </div>
+            <p className="text-base-white/80 leading-relaxed">Spreading Hope, Sharing Joy, Changing Lives</p>
           </div>
 
           <div>
