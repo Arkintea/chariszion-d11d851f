@@ -34,9 +34,12 @@ const Footer = () => {
                 alt="Chariszion Smile Foundation"
                 className="h-16 w-auto object-contain"
               />
+              <div>
+                <h2 className="text-xl font-bold text-white">Chariszion Smile Foundation</h2>
+              </div>
             </div>
             <p className="text-white/80 leading-relaxed">
-              Spreading hope, sharing joy, and changing lives across Nigeria.
+              Spreading Hope, Sharing Joy, Changing Lives
             </p>
           </div>
 
