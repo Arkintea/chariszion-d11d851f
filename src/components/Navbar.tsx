@@ -30,9 +30,9 @@ const Navbar = () => {
             <img
               src={logoImage}
               alt="Chariszion Smile Foundation"
-              className="h-20 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
             />
-            <div className="hidden lg:flex flex-col">
+            <div className="hidden md:flex flex-col">
               <h1 className="text-lg font-bold gradient-text leading-tight tracking-wide uppercase">
                 Chariszion Smile Foundation
               </h1>
