@@ -15,58 +15,51 @@ const About = () => {
             </div>
 
             {/* Founder's Story */}
-            <div className="space-y-8 animate-fade-in mb-16">
-              <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
-                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+            <div className="grid md:grid-cols-[350px,1fr] gap-8 animate-fade-in mb-16">
+              {/* Left Column - Founder Photo */}
+              <div className="flex flex-col items-center md:items-start">
+                <div className="relative w-full max-w-[350px]">
+                  <div className="absolute -inset-1 bg-gradient-to-br from-primary via-secondary to-accent rounded-2xl blur-sm opacity-75"></div>
+                  <div className="relative p-1 bg-gradient-to-br from-primary via-secondary to-accent rounded-2xl">
+                    <img
+                      src={founderImage}
+                      alt="Olamide Opatunde - Founder"
+                      className="relative w-full h-auto rounded-xl object-cover shadow-xl"
+                    />
+                  </div>
+                </div>
+                <div className="mt-6 text-center md:text-left">
+                  <h3 className="text-2xl font-bold gradient-text">Olamide Opatunde</h3>
+                  <p className="text-muted-foreground italic">Founder & Visionary</p>
+                </div>
+              </div>
+
+              {/* Right Column - Story Text */}
+              <div className="bg-card rounded-2xl p-8 shadow-lg border border-border space-y-6">
+                <p className="text-lg text-card-foreground leading-relaxed">
                   Chariszion Smile Foundation was born out of a deep and personal passion for helping others. My desire to give back is rooted in my own life experiences. Growing up, life wasn't perfect, but one thing I'm certain of is that my parents gave their very best. They ensured we had access to quality education, food, and shelter—even when it came at great personal sacrifice.
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                <p className="text-lg text-card-foreground leading-relaxed">
                   I vividly remember a particular incident in primary school when I was locked out of the school gate because my school fees had not been paid on time. Alongside several other children, I sat outside for most of the day until we were eventually allowed in. It was a deeply embarrassing and painful experience for me as a child—one I will never forget. That moment stayed with me and planted a seed in my heart: that one day, I would help children like me whose parents are struggling to make ends meet. I knew that, in whatever little way I could, I would pay it forward.
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                <p className="text-lg text-card-foreground leading-relaxed">
                   Giving comes naturally to me—it's part of who I am. I am a product of grace and giving. God gave His only Son for me—He gave me life, salvation, and victory. I believe that since we are freely given, we should also freely give. After all, we cannot take anything with us when we leave this earth, so why not make a difference with what we have while we can?
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                <p className="text-lg text-card-foreground leading-relaxed">
                   For my 30th birthday, I set a goal to feed 3,000 people. While I couldn't do it alone, I shared my vision with my family and friends, and together, we were able to feed more than half that number. Since then, for over a year now, we've continued this mission every month—feeding at least 200 people in Nigeria. We visit orphanages, streets, and churches to share food and spread hope. My greatest joy each month is seeing pictures from our outreaches—especially the smiles on the faces of children and the disabled. It brings tears to my eyes and joy to my heart, and it motivates me to do even more.
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                <p className="text-lg text-card-foreground leading-relaxed">
                   Now, after doing this quietly and consistently for more than a year, we've decided it's time to open our hands and hearts even wider by bringing our work to the public. We want others to join us in making an even greater impact.
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                <p className="text-lg text-card-foreground leading-relaxed">
                   This is my legacy. I have made a personal vow to feed and care for as many people as I can for as long as I live. I believe God has blessed me so I can be a blessing to others.
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                <p className="text-lg text-card-foreground leading-relaxed">
                   During my personal retreat in December 2023, while listening to Minister Dunsin Oyekan at the CCI Reboot Camp, the word of God came to me clearly: <span className="font-semibold italic">"These hands will feed nations."</span> I haven't fed nations yet—but I know I'm on the path to fulfilling that word. This is my calling. This is my purpose. And I'm walking in it every single day.
                 </p>
                 <p className="text-lg text-card-foreground leading-relaxed">
                   If you'd like to support us, we welcome you with open arms. Your generosity will go a long way in helping us reach more people and touch more lives.
                 </p>
-              </div>
-
-              {/* Founder Signature Card */}
-              <div className="flex justify-end animate-fade-in">
-                <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 rounded-2xl p-6 shadow-lg border border-border max-w-md">
-                  <div className="flex items-center gap-6">
-                    <div className="flex-1 text-right">
-                      <p className="text-2xl font-bold gradient-text mb-1">
-                        Olamide Opatunde
-                      </p>
-                      <p className="text-sm text-muted-foreground italic">Founder & Visionary</p>
-                    </div>
-                    <div className="flex-shrink-0">
-                      <div className="relative">
-                        <div className="absolute -inset-1 bg-gradient-to-br from-primary via-secondary to-accent rounded-xl blur-sm opacity-75"></div>
-                        <div className="relative p-1 bg-gradient-to-br from-primary via-secondary to-accent rounded-xl">
-                          <img
-                            src={founderImage}
-                            alt="Olamide Opatunde"
-                            className="relative w-32 md:w-40 h-auto rounded-lg object-cover shadow-xl"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
