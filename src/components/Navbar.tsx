@@ -27,16 +27,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-28 py-3">
           <Link to="/" className="flex items-center gap-4 hover:opacity-90 transition-opacity group">
-            <img
-              src={logoImage}
-              alt="Chariszion Smile Foundation"
-              className="h-16 md:h-20 w-auto object-contain"
-            />
+            <img src={logoImage} alt="Chariszion Smile Foundation" className="h-16 md:h-20 w-auto object-contain" />
             <div className="hidden md:flex flex-col gap-1">
               <h1 className="text-2xl md:text-3xl font-black text-primary leading-tight tracking-wide uppercase drop-shadow-md">
                 Chariszion Smile Foundation
               </h1>
-              <p className="text-sm md:text-base text-muted-foreground font-medium tracking-wider uppercase">
+              <p className="text-xs md:text-sm text-muted-foreground font-medium tracking-wider uppercase">
                 Spreading Hope, Sharing Joy, Changing Lives
               </p>
             </div>
@@ -71,11 +67,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-foreground"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
+          <button className="md:hidden p-2 text-foreground" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
