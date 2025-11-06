@@ -14,33 +14,6 @@ const About = () => {
               <p className="text-xl text-muted-foreground">Where compassion meets action</p>
             </div>
 
-            {/* Founder Section */}
-            <div className="mb-16 animate-fade-in">
-              <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 rounded-3xl p-8 md:p-12 shadow-xl border border-border">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="flex-shrink-0">
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent rounded-full blur-lg opacity-50"></div>
-                      <img
-                        src={founderImage}
-                        alt="Olamide Opatunde - Founder"
-                        className="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-2xl"
-                      />
-                    </div>
-                  </div>
-                  <div className="text-center md:text-left">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-2 gradient-text">
-                      Olamide Opatunde
-                    </h2>
-                    <p className="text-xl text-muted-foreground mb-4">Founder & Visionary</p>
-                    <p className="text-lg text-foreground/80 leading-relaxed">
-                      Driven by personal experiences and a heart full of compassion, Olamide founded Chariszion Smile Foundation to create lasting change in the lives of those who need it most.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Founder's Story */}
             <div className="space-y-8 animate-fade-in mb-16">
               <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
@@ -70,8 +43,28 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <p className="text-sm text-muted-foreground italic mb-2">— Olamide Opatunde, Founder</p>
+              {/* Founder Signature Card */}
+              <div className="flex justify-end animate-fade-in">
+                <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 rounded-2xl p-6 shadow-lg border border-border max-w-md">
+                  <div className="flex items-center gap-6">
+                    <div className="flex-1 text-right">
+                      <p className="text-2xl font-bold gradient-text mb-1">
+                        Olamide Opatunde
+                      </p>
+                      <p className="text-sm text-muted-foreground italic">Founder & Visionary</p>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent rounded-2xl blur opacity-40"></div>
+                        <img
+                          src={founderImage}
+                          alt="Olamide Opatunde"
+                          className="relative w-24 h-24 rounded-2xl object-cover object-top border-2 border-white shadow-xl"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

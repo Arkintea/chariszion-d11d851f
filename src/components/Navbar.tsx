@@ -25,13 +25,21 @@ const Navbar = () => {
   return (
     <nav className="bg-white/80 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+        <div className="flex justify-between items-center h-28 py-3">
+          <Link to="/" className="flex items-center gap-4 hover:opacity-90 transition-opacity group">
             <img
               src={logoImage}
               alt="Chariszion Smile Foundation"
-              className="h-16 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
+            <div className="hidden lg:flex flex-col">
+              <h1 className="text-xl font-bold gradient-text leading-tight tracking-wide">
+                Chariszion Smile Foundation
+              </h1>
+              <p className="text-xs text-muted-foreground font-medium tracking-wider">
+                Spreading Hope, Sharing Joy, Changing Lives
+              </p>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

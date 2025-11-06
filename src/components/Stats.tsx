@@ -1,4 +1,7 @@
 import { UtensilsCrossed, GraduationCap, Users } from "lucide-react";
+import mealsServedImage from "@/assets/meals-served.jpg";
+import studentsSupportedImage from "@/assets/students-supported.jpg";
+import familiesImpactedImage from "@/assets/families-impacted.jpg";
 
 const Stats = () => {
   const stats = [
@@ -8,7 +11,7 @@ const Stats = () => {
       label: "Meals Served",
       gradient: "from-rose-400 to-pink-600",
       bgGradient: "from-rose-50 to-pink-50",
-      image: "https://images.pexels.com/photos/6646966/pexels-photo-6646966.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: mealsServedImage,
     },
     {
       icon: GraduationCap,
@@ -16,7 +19,7 @@ const Stats = () => {
       label: "Students Supported",
       gradient: "from-accent to-cyan-600",
       bgGradient: "from-cyan-50 to-blue-50",
-      image: "https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: studentsSupportedImage,
     },
     {
       icon: Users,
@@ -24,7 +27,7 @@ const Stats = () => {
       label: "Families Impacted",
       gradient: "from-primary to-secondary",
       bgGradient: "from-orange-50 to-purple-50",
-      image: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: familiesImpactedImage,
     },
   ];
 
