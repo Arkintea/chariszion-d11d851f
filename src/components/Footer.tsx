@@ -32,7 +32,7 @@ const Footer = () => {
               <img
                 src={logoImage}
                 alt="Chariszion Smile Foundation"
-                className="h-16 w-auto object-contain brightness-0 invert"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <p className="text-white/80 leading-relaxed">

@@ -55,12 +55,14 @@ const About = () => {
                     </div>
                     <div className="flex-shrink-0">
                       <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent rounded-2xl blur opacity-40"></div>
-                        <img
-                          src={founderImage}
-                          alt="Olamide Opatunde"
-                          className="relative w-24 h-24 rounded-2xl object-cover object-top border-2 border-white shadow-xl"
-                        />
+                        <div className="absolute -inset-1 bg-gradient-to-br from-primary via-secondary to-accent rounded-xl blur-sm opacity-75"></div>
+                        <div className="relative p-1 bg-gradient-to-br from-primary via-secondary to-accent rounded-xl">
+                          <img
+                            src={founderImage}
+                            alt="Olamide Opatunde"
+                            className="relative w-32 md:w-40 h-auto rounded-lg object-cover shadow-xl"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
