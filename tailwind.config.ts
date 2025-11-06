@@ -37,7 +37,6 @@ export default {
           DEFAULT: '#4CAF50',
           foreground: "hsl(var(--primary-foreground))",
         },
-        "navbar-brand": "#0891B2",
         secondary: {
           50: '#fff8e1',
           100: '#ffecb3',
