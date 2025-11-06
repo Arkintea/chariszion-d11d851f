@@ -1,88 +1,81 @@
-import { Sparkles } from "lucide-react";
+import { Heart } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="min-h-screen pt-20">
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
-        <div className="absolute top-20 left-10 w-96 h-96 bg-accent/10 blob-2 blur-3xl" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-5xl mx-auto">
+    <div className="min-h-screen pt-20 bg-background">
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
                 Our <span className="gradient-text">Story</span>
               </h1>
               <p className="text-xl text-muted-foreground">Where compassion meets action</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-              {/* Founder Image */}
-              <div className="relative animate-fade-in">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 blob-1 blur-2xl" />
-                <div className="relative">
-                  <img
-                    src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg"
-                    alt="Olamide Opatunde - Founder & Visionary"
-                    className="rounded-3xl shadow-2xl w-full h-auto object-cover"
-                  />
-                  <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Sparkles className="w-5 h-5 text-primary" />
-                      <p className="font-bold text-foreground">Founder</p>
-                    </div>
-                    <p className="text-2xl font-bold gradient-text">Olamide Opatunde</p>
-                  </div>
-                </div>
+            {/* Founder's Story */}
+            <div className="space-y-8 animate-fade-in mb-16">
+              <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
+                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                  Chariszion Smile Foundation was born out of a deep and personal passion for helping others. My desire to give back is rooted in my own life experiences. Growing up, life wasn't perfect, but one thing I'm certain of is that my parents gave their very best. They ensured we had access to quality education, food, and shelter—even when it came at great personal sacrifice.
+                </p>
+                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                  I vividly remember a particular incident in primary school when I was locked out of the school gate because my school fees had not been paid on time. Alongside several other children, I sat outside for most of the day until we were eventually allowed in. It was a deeply embarrassing and painful experience for me as a child—one I will never forget. That moment stayed with me and planted a seed in my heart: that one day, I would help children like me whose parents are struggling to make ends meet. I knew that, in whatever little way I could, I would pay it forward.
+                </p>
+                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                  Giving comes naturally to me—it's part of who I am. I am a product of grace and giving. God gave His only Son for me—He gave me life, salvation, and victory. I believe that since we are freely given, we should also freely give. After all, we cannot take anything with us when we leave this earth, so why not make a difference with what we have while we can?
+                </p>
+                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                  For my 30th birthday, I set a goal to feed 3,000 people. While I couldn't do it alone, I shared my vision with my family and friends, and together, we were able to feed more than half that number. Since then, for over a year now, we've continued this mission every month—feeding at least 200 people in Nigeria. We visit orphanages, streets, and churches to share food and spread hope. My greatest joy each month is seeing pictures from our outreaches—especially the smiles on the faces of children and the disabled. It brings tears to my eyes and joy to my heart, and it motivates me to do even more.
+                </p>
+                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                  Now, after doing this quietly and consistently for more than a year, we've decided it's time to open our hands and hearts even wider by bringing our work to the public. We want others to join us in making an even greater impact.
+                </p>
+                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                  This is my legacy. I have made a personal vow to feed and care for as many people as I can for as long as I live. I believe God has blessed me so I can be a blessing to others.
+                </p>
+                <p className="text-lg text-card-foreground leading-relaxed mb-6">
+                  During my personal retreat in December 2023, while listening to Minister Dunsin Oyekan at the CCI Reboot Camp, the word of God came to me clearly: <span className="font-semibold italic">"These hands will feed nations."</span> I haven't fed nations yet—but I know I'm on the path to fulfilling that word. This is my calling. This is my purpose. And I'm walking in it every single day.
+                </p>
+                <p className="text-lg text-card-foreground leading-relaxed">
+                  If you'd like to support us, we welcome you with open arms. Your generosity will go a long way in helping us reach more people and touch more lives.
+                </p>
               </div>
 
-              {/* Founder's Story */}
-              <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary/20">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    "The vision for Chariszion Smile Foundation was born from a deep-seated desire to 
-                    make a lasting impact in our community. Having witnessed firsthand the challenges 
-                    faced by widows, orphans, and vulnerable children in Nigeria, I knew we had to take action."
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary/20">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    "Our mission goes beyond providing immediate relief - we aim to create sustainable 
-                    change through education and continuous support. Every smile we bring to a child's face, 
-                    every widow we empower, and every life we touch drives us forward."
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-primary/20">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    "We believe that by working together, we can create a brighter future for those in need. 
-                    Join us in this journey of spreading hope and changing lives, one person at a time."
-                  </p>
-                </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground italic mb-2">— Olamide Opatunde, Founder</p>
               </div>
             </div>
 
-            {/* Vision Section */}
-            <div className="relative animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-10 rounded-3xl blob-3" />
-              <div className="relative bg-gradient-to-r from-primary via-secondary to-accent rounded-3xl p-12 text-white shadow-2xl">
-                <div className="text-center space-y-6">
-                  <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
-                    <Sparkles className="w-5 h-5 animate-pulse" />
-                    <span className="font-semibold">Our Vision</span>
-                  </div>
-                  
-                  <h2 className="text-3xl md:text-4xl font-bold">
-                    Building a Brighter Tomorrow
-                  </h2>
-                  
-                  <p className="text-xl leading-relaxed max-w-3xl mx-auto text-white/90">
-                    To create a Nigeria where every child has access to education, every family has food on their 
-                    table, and every person has hope for a brighter tomorrow. Through compassion, dedication, and 
-                    community support, we're building a foundation of lasting change.
+            {/* Name Meaning Section */}
+            <div className="bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 rounded-2xl p-8 md:p-12 shadow-lg animate-fade-in">
+              <div className="flex items-center gap-3 mb-6 justify-center">
+                <Heart className="w-6 h-6 text-primary" />
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                  The Meaning Behind the Name
+                </h2>
+              </div>
+              
+              <div className="space-y-6 text-lg text-foreground/90">
+                <p className="leading-relaxed">
+                  The name <span className="font-bold gradient-text">Chariszion Smile Foundation</span> is rich in meaning:
+                </p>
+                
+                <div className="space-y-4 pl-4 border-l-4 border-primary">
+                  <p className="leading-relaxed">
+                    <span className="font-bold text-primary">Charis</span> is the Greek word for grace or love. I have a deep love for people and a desire to share God's grace through service.
+                  </p>
+                  <p className="leading-relaxed">
+                    <span className="font-bold text-secondary">Zion</span> represents a place of refuge, worship, and peace—a safe haven where people can come to find comfort and hope.
+                  </p>
+                  <p className="leading-relaxed">
+                    <span className="font-bold text-accent">Smile</span> reflects my personality and my mission—to not only smile myself, but to bring smiles to the faces of others through acts of kindness.
                   </p>
                 </div>
+                
+                <p className="leading-relaxed font-semibold text-center mt-8 text-xl">
+                  Together, these words form the heart of who we are: <span className="gradient-text">Chariszion Smile Foundation</span>—a place of love, refuge, and joy.
+                </p>
               </div>
             </div>
           </div>
