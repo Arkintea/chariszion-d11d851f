@@ -8,7 +8,7 @@ const About = () => {
         <div className="container mx-auto px-2 md:px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16 animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
+              <h1 className="text-9xl md:text-6xl font-bold mb-6 text-foreground">
                 Our <span className="gradient-text">Story</span>
               </h1>
               <p className="text-xl text-muted-foreground">Where compassion meets action</p>
