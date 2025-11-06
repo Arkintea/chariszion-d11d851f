@@ -8,6 +8,7 @@ const Stats = () => {
       label: "Meals Served",
       gradient: "from-rose-400 to-pink-600",
       bgGradient: "from-rose-50 to-pink-50",
+      image: "https://images.pexels.com/photos/6646966/pexels-photo-6646966.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       icon: GraduationCap,
@@ -15,6 +16,7 @@ const Stats = () => {
       label: "Students Supported",
       gradient: "from-accent to-cyan-600",
       bgGradient: "from-cyan-50 to-blue-50",
+      image: "https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       icon: Users,
@@ -22,6 +24,7 @@ const Stats = () => {
       label: "Families Impacted",
       gradient: "from-primary to-secondary",
       bgGradient: "from-orange-50 to-purple-50",
+      image: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
   ];
 
@@ -41,18 +44,28 @@ const Stats = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="group relative animate-fade-in"
+              className="group relative animate-fade-in overflow-hidden rounded-3xl"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${stat.bgGradient} rounded-3xl transform group-hover:scale-105 transition-transform duration-300`} />
-              <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-border">
-                <div className={`bg-gradient-to-br ${stat.gradient} w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 transform group-hover:rotate-12 transition-transform duration-300 shadow-lg`}>
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <img 
+                  src={stat.image} 
+                  alt={stat.label}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40 group-hover:from-black/95 group-hover:via-black/70 transition-all duration-500" />
+              </div>
+              
+              {/* Content */}
+              <div className="relative z-10 p-8 text-center flex flex-col items-center justify-center min-h-[300px]">
+                <div className={`bg-gradient-to-br ${stat.gradient} w-20 h-20 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg`}>
                   <stat.icon className="w-10 h-10 text-white" />
                 </div>
-                <h3 className={`text-5xl font-bold mb-2 bg-gradient-to-br ${stat.gradient} bg-clip-text text-transparent`}>
+                <h3 className="text-5xl font-bold mb-2 text-white">
                   {stat.value}
                 </h3>
-                <p className="text-lg text-muted-foreground font-medium">{stat.label}</p>
+                <p className="text-lg text-white/90 font-medium">{stat.label}</p>
               </div>
             </div>
           ))}

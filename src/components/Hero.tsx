@@ -13,9 +13,10 @@ const Hero = () => {
         <img 
           src={heroImage} 
           alt="Children smiling" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/75 to-transparent" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-32">
