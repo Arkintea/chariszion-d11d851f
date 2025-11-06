@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -22,46 +22,51 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-primary-600 text-white shadow-lg fixed w-full top-0 z-50">
+    <nav className="bg-white/80 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <img
-              src="https://github.com/Arkintea/chariszionsmile/blob/main/white.png?raw=true"
-              alt="Chariszion Smile Foundation"
-              className="h-12 w-12 object-contain"
-            />
-            <span className="text-xl font-bold">Chariszion Smile Foundation</span>
+            <div className="bg-gradient-to-br from-primary to-secondary p-2 rounded-2xl shadow-lg">
+              <img
+                src="https://github.com/Arkintea/chariszionsmile/blob/main/white.png?raw=true"
+                alt="Chariszion Smile Foundation"
+                className="h-10 w-10 object-contain"
+              />
+            </div>
+            <span className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              Chariszion Smile
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <Link to="/" className="hover:text-secondary-400 transition-colors font-medium">
+          <div className="hidden md:flex items-center gap-6">
+            <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">
               Home
             </Link>
-            <Link to="/about" className="hover:text-secondary-400 transition-colors font-medium">
+            <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium">
               About
             </Link>
             <button
               onClick={() => scrollToSection("programs")}
-              className="hover:text-secondary-400 transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Programs
             </button>
             <button
               onClick={() => scrollToSection("gallery")}
-              className="hover:text-secondary-400 transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Gallery
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="hover:text-secondary-400 transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Contact
             </button>
             <Link to="/donate">
-              <Button className="bg-secondary-500 hover:bg-secondary-600 text-gray-900 font-bold shadow-lg">
+              <Button className="bg-gradient-to-r from-primary to-secondary hover:shadow-xl transition-all duration-300 font-semibold rounded-full px-6">
+                <Heart className="w-4 h-4 mr-2" />
                 Donate Now
               </Button>
             </Link>
@@ -69,7 +74,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-foreground"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -79,41 +84,42 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-6 space-y-4">
+          <div className="md:hidden pb-6 space-y-4 animate-fade-in">
             <Link
               to="/"
-              className="block hover:text-secondary-400 transition-colors font-medium"
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="block hover:text-secondary-400 transition-colors font-medium"
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsOpen(false)}
             >
               About
             </Link>
             <button
               onClick={() => scrollToSection("programs")}
-              className="block w-full text-left hover:text-secondary-400 transition-colors font-medium"
+              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
             >
               Programs
             </button>
             <button
               onClick={() => scrollToSection("gallery")}
-              className="block w-full text-left hover:text-secondary-400 transition-colors font-medium"
+              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
             >
               Gallery
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="block w-full text-left hover:text-secondary-400 transition-colors font-medium"
+              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
             >
               Contact
             </button>
             <Link to="/donate" onClick={() => setIsOpen(false)}>
-              <Button className="w-full bg-secondary-500 hover:bg-secondary-600 text-gray-900 font-bold">
+              <Button className="w-full bg-gradient-to-r from-primary to-secondary font-semibold rounded-full">
+                <Heart className="w-4 h-4 mr-2" />
                 Donate Now
               </Button>
             </Link>
