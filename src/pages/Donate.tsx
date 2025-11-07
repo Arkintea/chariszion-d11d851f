@@ -6,7 +6,7 @@ const Donate = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
       <div className="absolute top-20 right-10 w-96 h-96 bg-accent/10 blob-1 blur-3xl animate-float" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/10 blob-2 blur-3xl animate-float-delayed" />
-      
+
       <section className="py-20 relative z-10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -15,14 +15,14 @@ const Donate = () => {
                 <Heart className="w-5 h-5 text-primary fill-primary animate-pulse" />
                 <span className="text-sm font-semibold text-foreground">Make a Difference</span>
               </div>
-              
+
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
                 Your <span className="gradient-text">Generosity</span> Matters
               </h1>
-              
+
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Every contribution helps us continue our mission of spreading hope and changing lives. 
-                Together, we can make a real impact in our community! 🌟
+                Every contribution helps us continue our mission of spreading hope and changing lives. Together, we can
+                make a real impact in our community! 🌟
               </p>
             </div>
 
@@ -40,21 +40,21 @@ const Donate = () => {
                     </div>
                     <p className="text-white/90 text-lg">Direct support through bank transfer</p>
                   </div>
-                  
+
                   <div className="p-8 space-y-6">
                     <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-2xl">
                       <p className="text-sm text-muted-foreground mb-2 font-medium">Account Name</p>
                       <p className="text-2xl font-bold text-foreground">Chariszion Smile Foundation</p>
                     </div>
-                    
+
                     <div className="bg-gradient-to-br from-accent/5 to-primary/5 p-6 rounded-2xl">
                       <p className="text-sm text-muted-foreground mb-2 font-medium">Account Number</p>
-                      <p className="text-2xl font-bold text-foreground">1234567890</p>
+                      <p className="text-2xl font-bold text-foreground">1313495541</p>
                     </div>
-                    
+
                     <div className="bg-gradient-to-br from-secondary/5 to-accent/5 p-6 rounded-2xl">
                       <p className="text-sm text-muted-foreground mb-2 font-medium">Bank Name</p>
-                      <p className="text-2xl font-bold text-foreground">Your Bank Name</p>
+                      <p className="text-2xl font-bold text-foreground">Zenith Bank</p>
                     </div>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const Donate = () => {
                     </div>
                     <p className="text-white/90 text-lg">Supporting us from around the world</p>
                   </div>
-                  
+
                   <div className="p-8">
                     <div className="bg-gradient-to-br from-accent/5 to-cyan-500/5 p-6 rounded-2xl">
                       <p className="text-sm text-muted-foreground mb-3 font-medium">Contact us via email</p>
@@ -87,8 +87,8 @@ const Donate = () => {
                       </a>
                     </div>
                     <p className="text-muted-foreground mt-6 leading-relaxed">
-                      Please email us for alternative donation methods and we'll be happy to assist you in 
-                      supporting our cause. We appreciate your international support! 🌍
+                      Please email us for alternative donation methods and we'll be happy to assist you in supporting
+                      our cause. We appreciate your international support! 🌍
                     </p>
                   </div>
                 </div>
@@ -102,9 +102,9 @@ const Donate = () => {
                 <Sparkles className="w-16 h-16 mx-auto mb-6 animate-pulse" />
                 <h3 className="text-3xl md:text-4xl font-bold mb-6">Thank You for Your Support!</h3>
                 <p className="text-xl leading-relaxed max-w-2xl mx-auto text-white/90">
-                  Your donation helps us provide meals, education, and hope to those who need it most. 
-                  Together, we're creating lasting change and bringing smiles to children's faces across Nigeria. 
-                  Every contribution, big or small, makes a real difference! 💝
+                  Your donation helps us provide meals, education, and hope to those who need it most. Together, we're
+                  creating lasting change and bringing smiles to children's faces across Nigeria. Every contribution,
+                  big or small, makes a real difference! 💝
                 </p>
               </div>
             </div>

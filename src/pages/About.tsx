@@ -29,7 +29,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className="mt-6 text-center md:text-left">
-                  <h3 className="text-2xl font-bold gradient-text">Olamide Opatunde</h3>
+                  <h3 className="text-2xl font-bold gradient-text">Olamide Akinpelu</h3>
                   <p className="text-muted-foreground italic">Founder & Visionary</p>
                 </div>
               </div>
