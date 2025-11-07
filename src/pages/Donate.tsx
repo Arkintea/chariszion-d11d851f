@@ -54,7 +54,7 @@ const Donate = () => {
 
                     <div className="bg-gradient-to-br from-secondary/5 to-accent/5 p-6 rounded-2xl">
                       <p className="text-sm text-muted-foreground mb-2 font-medium">Bank Name</p>
-                      <p className="text-2xl font-bold text-foreground">Zenith Bank</p>
+                      <p className="text-2xl font-bold text-foreground">Zenith Bank Nigeria</p>
                     </div>
                   </div>
                 </div>
