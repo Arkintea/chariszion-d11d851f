@@ -46,13 +46,13 @@ const About = () => {
                   I vividly remember a particular incident in primary school when I was locked out of the school gate
                   because my school fees had not been paid on time. Alongside several other children, I sat outside for
                   most of the day until we were eventually allowed in. It was a deeply embarrassing and painful
-                  experience for me as a child—one I will never forget. That moment stayed with me and planted a seed in
-                  my heart: that one day, I would help children like me whose parents are struggling to make ends meet.
-                  I knew that, in whatever little way I could, I would pay it forward.
+                  experience for me as a child, one I will never forget. That moment stayed with me and planted a seed
+                  in my heart: that one day, I would help children like me whose parents are struggling to make ends
+                  meet. I knew that, in whatever little way I could, I would pay it forward.
                 </p>
                 <p className="text-lg text-card-foreground leading-relaxed text-justify">
                   Giving comes naturally to me—it's part of who I am. I am a product of grace and giving. God gave His
-                  only Son for me—He gave me life, salvation, and victory. I believe that since we are freely given, we
+                  only Son for me, He gave me life, salvation, and victory. I believe that since we are freely given, we
                   should also freely give. After all, we cannot take anything with us when we leave this earth, so why
                   not make a difference with what we have while we can?
                 </p>
@@ -61,7 +61,7 @@ const About = () => {
                   vision with my family and friends, and together, we were able to feed more than half that number.
                   Since then, for over a year now, we've continued this mission every month—feeding at least 200 people
                   in Nigeria. We visit orphanages, streets, and churches to share food and spread hope. My greatest joy
-                  each month is seeing pictures from our outreaches—especially the smiles on the faces of children and
+                  each month is seeing pictures from our outreaches, especially the smiles on the faces of children and
                   the disabled. It brings tears to my eyes and joy to my heart, and it motivates me to do even more.
                 </p>
                 <p className="text-lg text-card-foreground leading-relaxed text-justify">
@@ -77,7 +77,7 @@ const About = () => {
                   During my personal retreat in December 2023, while listening to Minister Dunsin Oyekan at the CCI
                   Reboot Camp, the word of God came to me clearly:{" "}
                   <span className="font-semibold italic">"These hands will feed nations."</span> I haven't fed nations
-                  yet—but I know I'm on the path to fulfilling that word. This is my calling. This is my purpose. And
+                  yet, but I know I'm on the path to fulfilling that word. This is my calling. This is my purpose. And
                   I'm walking in it every single day.
                 </p>
                 <p className="text-lg text-card-foreground leading-relaxed text-justify">
@@ -107,10 +107,10 @@ const About = () => {
                   </p>
                   <p className="leading-relaxed">
                     <span className="font-bold text-secondary">Zion</span> represents a place of refuge, worship, and
-                    peace—a safe haven where people can come to find comfort and hope.
+                    peace, a safe haven where people can come to find comfort and hope.
                   </p>
                   <p className="leading-relaxed">
-                    <span className="font-bold text-accent">Smile</span> reflects my personality and my mission—to not
+                    <span className="font-bold text-accent">Smile</span> reflects my personality and my mission, to not
                     only smile myself, but to bring smiles to the faces of others through acts of kindness.
                   </p>
                 </div>
