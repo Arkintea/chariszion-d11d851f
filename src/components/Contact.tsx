@@ -1,12 +1,81 @@
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { useState } from "react";
+import { Phone, Mail, MapPin, Send, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().trim().min(2, "Name must be at least 2 characters").max(100, "Name must be less than 100 characters"),
+  email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
+  message: z.string().trim().min(10, "Message must be at least 10 characters").max(1000, "Message must be less than 1000 characters")
+});
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission would be handled here
+    
+    // Validate form data
+    try {
+      contactSchema.parse(formData);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        toast({
+          title: "Validation Error",
+          description: error.errors[0].message,
+          variant: "destructive",
+        });
+        return;
+      }
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      console.log("Submitting contact form:", formData);
+      
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) {
+        console.error("Error from edge function:", error);
+        throw error;
+      }
+
+      console.log("Email sent successfully:", data);
+
+      toast({
+        title: "Message sent successfully! 🎉",
+        description: "We'll get back to you as soon as possible.",
+      });
+
+      // Clear form
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      });
+    } catch (error: any) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Failed to send message",
+        description: error.message || "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -87,6 +156,9 @@ const Contact = () => {
                     id="name" 
                     placeholder="John Doe" 
                     required 
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    disabled={isSubmitting}
                     className="rounded-xl border-2 focus:border-primary transition-colors"
                   />
                 </div>
@@ -100,6 +172,9 @@ const Contact = () => {
                     type="email" 
                     placeholder="john@example.com" 
                     required 
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    disabled={isSubmitting}
                     className="rounded-xl border-2 focus:border-primary transition-colors"
                   />
                 </div>
@@ -113,16 +188,29 @@ const Contact = () => {
                     placeholder="Tell us how you'd like to help..."
                     rows={5}
                     required
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    disabled={isSubmitting}
                     className="rounded-xl border-2 focus:border-primary transition-colors resize-none"
                   />
                 </div>
                 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-xl transition-all duration-300 font-bold text-lg py-6 rounded-xl"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-xl transition-all duration-300 font-bold text-lg py-6 rounded-xl disabled:opacity-50"
                 >
-                  <Send className="w-5 h-5 mr-2" />
-                  Send Message
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5 mr-2" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
               </form>
             </div>
