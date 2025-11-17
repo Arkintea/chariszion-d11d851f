@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white/80 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-28 py-3">
+        <div className="flex justify-between items-center h-20 md:h-28 py-3">
           <Link to="/" className="flex items-center gap-4 hover:opacity-90 transition-opacity group">
             <img src={logoImage} alt="Chariszion Smile Foundation" className="h-16 md:h-20 w-auto object-contain" />
             <div className="hidden md:flex flex-col gap-1">
