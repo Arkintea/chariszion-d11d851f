@@ -25,14 +25,23 @@ const Navbar = () => {
   return (
     <nav className="bg-white/80 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-20 md:h-28 py-3">
-          <Link to="/" className="flex items-center gap-4 hover:opacity-90 transition-opacity group">
-            <img src={logoImage} alt="Chariszion Smile Foundation" className="h-16 md:h-20 w-auto object-contain" />
-            <div className="hidden md:flex flex-col gap-1">
-              <h1 className="text-2xl md:text-3xl font-black text-primary leading-tight tracking-wide uppercase drop-shadow-md">
+        <div className="flex justify-between items-center h-16 sm:h-20 md:h-24 lg:h-28 py-2 md:py-3">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 md:gap-4 hover:opacity-90 transition-opacity group flex-1 min-w-0">
+            <img src={logoImage} alt="Chariszion Smile Foundation" className="h-14 sm:h-16 md:h-20 w-auto object-contain flex-shrink-0" />
+            <div className="flex flex-col gap-0.5 md:gap-1 min-w-0 flex-1">
+              {/* Mobile: Show abbreviated name */}
+              <h1 className="sm:hidden text-sm font-black text-primary leading-tight tracking-wide uppercase truncate">
+                Chariszion Smile
+              </h1>
+              {/* Small tablet: Show compact version */}
+              <h1 className="hidden sm:block md:hidden text-base font-black text-primary leading-tight tracking-wide uppercase">
                 Chariszion Smile Foundation
               </h1>
-              <p className="text-xs md:text-sm text-muted-foreground font-medium tracking-wider uppercase">
+              {/* Medium tablet and up: Show full version */}
+              <h1 className="hidden md:block text-xl lg:text-2xl xl:text-3xl font-black text-primary leading-tight tracking-wide uppercase drop-shadow-md">
+                Chariszion Smile Foundation
+              </h1>
+              <p className="hidden sm:block text-[0.6rem] sm:text-xs md:text-sm text-muted-foreground font-medium tracking-wider uppercase truncate">
                 Spreading Hope, Sharing Joy, Changing Lives
               </p>
             </div>
