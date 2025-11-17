@@ -129,7 +129,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1 text-foreground">{info.title}</h3>
-                    <p className="text-muted-foreground">{info.value}</p>
+                    <p className="text-muted-foreground break-all text-sm md:text-base">{info.value}</p>
                   </div>
                 </div>
               </div>
