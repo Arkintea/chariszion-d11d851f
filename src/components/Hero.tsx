@@ -19,9 +19,9 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/75 to-transparent" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-32">
+      <div className="relative z-10 container mx-auto px-4 py-20 md:py-32">
         <div className="max-w-3xl space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight text-foreground">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight text-foreground">
             Spreading Hope,
             <br />
             <span className="gradient-text">Sharing Joy,</span>
@@ -29,7 +29,7 @@ const Hero = () => {
             Changing Lives
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
             We provide hot meals, educational support, and hope to those in need across Nigeria. 
             Join us in making a difference in the lives of widows, orphans, and vulnerable children.
           </p>

@@ -61,11 +61,11 @@ const Stats = () => {
               </div>
               
               {/* Content */}
-              <div className="relative z-10 p-8 text-center flex flex-col items-center justify-center min-h-[300px]">
+              <div className="relative z-10 p-8 text-center flex flex-col items-center justify-center min-h-[250px] md:min-h-[300px]">
                 <div className={`bg-gradient-to-br ${stat.gradient} w-20 h-20 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg`}>
                   <stat.icon className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-5xl font-bold mb-2 text-white">
+                <h3 className="text-4xl md:text-5xl font-bold mb-2 text-white">
                   {stat.value}
                 </h3>
                 <p className="text-lg text-white/90 font-medium">{stat.label}</p>

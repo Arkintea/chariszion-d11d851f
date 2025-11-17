@@ -5,10 +5,10 @@ const About = () => {
   return (
     <div className="min-h-screen pt-20 bg-background">
       <section className="py-20">
-        <div className="container mx-auto px-2 md:px-4">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16 animate-fade-in">
-              <h1 className="text-9xl md:text-6xl font-bold mb-6 text-foreground">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
                 Our <span className="gradient-text">Story</span>
               </h1>
               <p className="text-xl text-muted-foreground">Where compassion meets action</p>
@@ -36,13 +36,13 @@ const About = () => {
 
               {/* Right Column - Story Text */}
               <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg border border-border space-y-6">
-                <p className="text-lg text-card-foreground leading-relaxed text-justify">
+                <p className="text-base md:text-lg text-card-foreground leading-relaxed text-left md:text-justify">
                   Chariszion Smile Foundation was born out of a deep and personal passion for helping others. My desire
                   to give back is rooted in my own life experiences. Growing up, life wasn't perfect, but one thing I'm
                   certain of is that my parents gave their very best. They ensured we had access to quality education,
                   food, and shelter, even when it came at great personal sacrifice.
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed text-justify">
+                <p className="text-base md:text-lg text-card-foreground leading-relaxed text-left md:text-justify">
                   I vividly remember a particular incident in primary school when I was locked out of the school gate
                   because my school fees had not been paid on time. Alongside several other children, I sat outside for
                   most of the day until we were eventually allowed in. It was a deeply embarrassing and painful
@@ -50,13 +50,13 @@ const About = () => {
                   in my heart: that one day, I would help children like me whose parents are struggling to make ends
                   meet. I knew that, in whatever little way I could, I would pay it forward.
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed text-justify">
+                <p className="text-base md:text-lg text-card-foreground leading-relaxed text-left md:text-justify">
                   Giving comes naturally to me, it's part of who I am. I am a product of grace and giving. God gave His
                   only Son for me, He gave me life, salvation, and victory. I believe that since we are freely given, we
                   should also freely give. After all, we cannot take anything with us when we leave this earth, so why
                   not make a difference with what we have while we can?
                 </p>
-                <p className="text-lg text-card-foreground leading-relaxed text-justify">
+                <p className="text-base md:text-lg text-card-foreground leading-relaxed text-left md:text-justify">
                   For my 30th birthday, I set a goal to feed 3,000 people. While I couldn't do it alone, I shared my
                   vision with my family and friends, and together, we were able to feed more than half that number.
                   Since then, for over a year now, we've continued this mission every month, feeding at least 200 people
