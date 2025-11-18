@@ -127,9 +127,9 @@ const Contact = () => {
                   <div className={`bg-gradient-to-br ${info.gradient} w-14 h-14 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 shadow-md`}>
                     <info.icon className="w-7 h-7 text-white" />
                   </div>
-                  <div>
+                  <div className="min-w-0 flex-1">
                     <h3 className="font-bold text-lg mb-1 text-foreground">{info.title}</h3>
-                    <p className="text-muted-foreground break-all text-sm md:text-base">{info.value}</p>
+                    <p className="text-muted-foreground break-words overflow-wrap-anywhere text-xs sm:text-sm md:text-base leading-relaxed">{info.value}</p>
                   </div>
                 </div>
               </div>

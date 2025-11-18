@@ -25,16 +25,16 @@ const Navbar = () => {
   return (
     <nav className="bg-white/80 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16 sm:h-20 md:h-24 lg:h-28 py-2 md:py-3">
-          <Link to="/" className="flex items-center gap-2 sm:gap-3 md:gap-4 hover:opacity-90 transition-opacity group flex-1 min-w-0">
-            <img src={logoImage} alt="Chariszion Smile Foundation" className="h-14 sm:h-16 md:h-20 w-auto object-contain flex-shrink-0" />
+        <div className="flex justify-between items-center h-16 sm:h-18 md:h-20 lg:h-24 py-2 md:py-3">
+          <Link to="/" className="flex items-center gap-2 sm:gap-2.5 md:gap-3 lg:gap-4 hover:opacity-90 transition-opacity group flex-1 min-w-0">
+            <img src={logoImage} alt="Chariszion Smile Foundation" className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain flex-shrink-0" />
             <div className="flex flex-col gap-0.5 md:gap-1 min-w-0 flex-1">
               {/* Single responsive title - shows FULL name on all screens */}
-              <h1 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-black text-primary leading-tight tracking-wide uppercase drop-shadow-md">
+              <h1 className="text-sm sm:text-sm md:text-base lg:text-xl xl:text-2xl font-black text-primary leading-tight tracking-tight uppercase drop-shadow-md">
                 Chariszion Smile Foundation
               </h1>
               {/* Single responsive tagline - shows on ALL screens */}
-              <p className="text-[0.5rem] sm:text-[0.6rem] md:text-xs lg:text-sm text-muted-foreground font-medium tracking-wider uppercase">
+              <p className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.65rem] lg:text-xs text-muted-foreground font-medium tracking-wide uppercase line-clamp-1">
                 Spreading Hope, Sharing Joy, Changing Lives
               </p>
             </div>
