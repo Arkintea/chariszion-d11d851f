@@ -29,19 +29,12 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2 sm:gap-3 md:gap-4 hover:opacity-90 transition-opacity group flex-1 min-w-0">
             <img src={logoImage} alt="Chariszion Smile Foundation" className="h-14 sm:h-16 md:h-20 w-auto object-contain flex-shrink-0" />
             <div className="flex flex-col gap-0.5 md:gap-1 min-w-0 flex-1">
-              {/* Mobile: Show abbreviated name */}
-              <h1 className="sm:hidden text-sm font-black text-primary leading-tight tracking-wide uppercase truncate">
-                Chariszion Smile
-              </h1>
-              {/* Small tablet: Show compact version */}
-              <h1 className="hidden sm:block md:hidden text-base font-black text-primary leading-tight tracking-wide uppercase">
+              {/* Single responsive title - shows FULL name on all screens */}
+              <h1 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-black text-primary leading-tight tracking-wide uppercase drop-shadow-md">
                 Chariszion Smile Foundation
               </h1>
-              {/* Medium tablet and up: Show full version */}
-              <h1 className="hidden md:block text-xl lg:text-2xl xl:text-3xl font-black text-primary leading-tight tracking-wide uppercase drop-shadow-md">
-                Chariszion Smile Foundation
-              </h1>
-              <p className="hidden sm:block text-[0.6rem] sm:text-xs md:text-sm text-muted-foreground font-medium tracking-wider uppercase truncate">
+              {/* Single responsive tagline - shows on ALL screens */}
+              <p className="text-[0.5rem] sm:text-[0.6rem] md:text-xs lg:text-sm text-muted-foreground font-medium tracking-wider uppercase">
                 Spreading Hope, Sharing Joy, Changing Lives
               </p>
             </div>
