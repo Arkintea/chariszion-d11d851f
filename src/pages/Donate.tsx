@@ -81,7 +81,7 @@ const Donate = () => {
                       <p className="text-sm text-muted-foreground mb-3 font-medium">Contact us via email</p>
                       <a
                         href="mailto:contact@chariszionsmile.org"
-                        className="text-2xl font-bold bg-gradient-to-r from-accent to-cyan-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+                        className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold bg-gradient-to-r from-accent to-cyan-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity break-words overflow-wrap-anywhere block"
                       >
                         contact@chariszionsmile.org
                       </a>
