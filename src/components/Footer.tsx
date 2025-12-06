@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Heart } from "lucide-react";
-import logoImage from "@/assets/logo-official.png";
+import logoImage from "@/assets/logo-transparent.png";
 
 const Footer = () => {
   const navigate = useNavigate();
